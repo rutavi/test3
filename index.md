@@ -22,20 +22,7 @@ If you want to maintain your docs in the `docs` directory of an existing project
 
 Testing code placement
 
-private AdManagerInterstitialAdLoadCallback createListener() {
-        return new AdManagerInterstitialAdLoadCallback() {
-            @Override
-            public void onAdLoaded(AdManagerInterstitialAd interstitialManager) {
-                Log.d(Tag, "veikiu");
-                interstitialManager.show(MainActivity.this);
-            }
 
-            @Override
-            public void onAdFailedToLoad(LoadAdError loadAdError) {
-                Log.e(Tag, loadAdError.getMessage());
-            }
-        };
-    }
 ```java
     private AdManagerInterstitialAdLoadCallback createListener() {
         return new AdManagerInterstitialAdLoadCallback() {
@@ -52,24 +39,7 @@ private AdManagerInterstitialAdLoadCallback createListener() {
         };
     }
 ```
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        Bagel.start()
-        
-        prebidInit()
-        createBanner()
-    }
-```swift
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        Bagel.start()
-        
-        prebidInit()
-        createBanner()
-    }
-```
+   
 ----
 
 [^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
